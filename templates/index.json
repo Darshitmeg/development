@@ -77,7 +77,7 @@
       "settings": {
         "title": "Featured products",
         "collection": "all",
-        "products_to_show": 6,
+        "products_to_show": 2,
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "square",
