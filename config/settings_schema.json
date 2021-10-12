@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "2.2.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -13,6 +13,18 @@
       {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
+      },
+      {
+        "type": "color",
+        "id": "announcement_bar_background",
+        "label": "Announcement Bar Background",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "announcement_bar_text",
+        "label": "Announcement Bar Text",
+        "default": "#000000"
       },
       {
         "type": "color",

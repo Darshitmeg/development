@@ -42,6 +42,7 @@
   --color-foreground: var(--color-base-accent-2);
 }
 
+
 :root,
 .color-background-1 {
   --color-link: var(--color-base-outline-button-labels);
@@ -1828,7 +1829,12 @@ input[type='checkbox'] {
   margin: 0;
   letter-spacing: 0.1rem;
 }
-
+.announcement-bar{
+background-color : var(--color-announcementbar-background);
+}
+.announcement-bar .announcement-bar__message.h5{
+color : var(--color-announcementbar-text);
+}
 /* section-header */
 #shopify-section-header {
   z-index: 3;
