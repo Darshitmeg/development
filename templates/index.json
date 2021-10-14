@@ -226,7 +226,7 @@
         "cell_align": "left",
         "title_mb": 48,
         "cell_width": "25%",
-        "wrap_around": "true",
+        "wrap_around": "false",
         "mr": 16
       }
     }
