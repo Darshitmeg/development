@@ -181,57 +181,46 @@
     "1634201288de856b46": {
       "type": "slideshow",
       "blocks": {
-        "1634201288de856b46-0": {
-          "type": "image",
+        "80d12170-3db3-471c-b81e-aca491e776ea": {
+          "type": "slide",
           "settings": {
-            "pretext": "",
-            "title": "Turbo Shopify Theme",
-            "subtitle": "",
-            "button1": "",
-            "button1_link": "",
-            "button1_style": "global-button--banner",
-            "button2": "",
-            "button2_link": "",
-            "button2_style": "global-button--banner",
-            "text_position": "center",
-            "text_align": "center",
-            "caption_content_background": "original",
-            "mobile_image_crop": "none"
+            "featured_product": "ayers-chambray"
           }
         },
-        "1634201288de856b46-1": {
-          "type": "image",
+        "e8d96b9b-4957-4a7a-9152-1f56787635e3": {
+          "type": "slide",
           "settings": {
-            "pretext": "",
-            "title": "Your headline",
-            "subtitle": "",
-            "button1": "",
-            "button1_link": "",
-            "button1_style": "global-button--banner",
-            "button2": "",
-            "button2_link": "",
-            "button2_style": "global-button--banner",
-            "text_position": "center",
-            "text_align": "center",
-            "caption_content_background": "original",
-            "mobile_image_crop": "none"
+            "featured_product": "camp-stool"
+          }
+        },
+        "9347ae99-d5ea-4dca-a8f0-aa11e6d5fef6": {
+          "type": "slide",
+          "settings": {
+            "featured_product": "cydney-plaid"
+          }
+        },
+        "5231e85f-359a-4372-ba46-4198f0169ec5": {
+          "type": "slide",
+          "settings": {
+            "featured_product": "chevron"
           }
         }
       },
       "block_order": [
-        "1634201288de856b46-0",
-        "1634201288de856b46-1"
+        "80d12170-3db3-471c-b81e-aca491e776ea",
+        "e8d96b9b-4957-4a7a-9152-1f56787635e3",
+        "9347ae99-d5ea-4dca-a8f0-aa11e6d5fef6",
+        "5231e85f-359a-4372-ba46-4198f0169ec5"
       ],
       "settings": {
-        "wide_display": true,
-        "slideshow_text_animation": "fadeInDown",
-        "slideshow_animation": "fade",
-        "slideshow_speed": 6,
-        "activate_adaptiveHeight": false,
-        "mobile_text_below_image": true,
-        "mobile_text_color": "",
-        "css_class": "",
-        "custom_css": ""
+        "bg": "",
+        "title": "Flickity Product Slider",
+        "img_width": 200,
+        "cell_align": "center",
+        "title_mb": 48,
+        "cell_width": "25%",
+        "wrap_around": "true",
+        "mr": 16
       }
     }
   },
