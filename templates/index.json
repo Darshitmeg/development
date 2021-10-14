@@ -204,13 +204,20 @@
           "settings": {
             "featured_product": "chevron"
           }
+        },
+        "d84d7b00-557d-4e54-86ec-e5e1506fb4ca": {
+          "type": "slide",
+          "settings": {
+            "featured_product": "foraker-canvas-coat"
+          }
         }
       },
       "block_order": [
         "80d12170-3db3-471c-b81e-aca491e776ea",
         "e8d96b9b-4957-4a7a-9152-1f56787635e3",
         "9347ae99-d5ea-4dca-a8f0-aa11e6d5fef6",
-        "5231e85f-359a-4372-ba46-4198f0169ec5"
+        "5231e85f-359a-4372-ba46-4198f0169ec5",
+        "d84d7b00-557d-4e54-86ec-e5e1506fb4ca"
       ],
       "settings": {
         "bg": "",
