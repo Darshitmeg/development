@@ -223,7 +223,7 @@
         "bg": "",
         "title": "New Arrival",
         "img_width": 250,
-        "cell_align": "center",
+        "cell_align": "left",
         "title_mb": 48,
         "cell_width": "25%",
         "wrap_around": "true",
