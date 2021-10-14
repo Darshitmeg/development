@@ -220,7 +220,7 @@
         "d84d7b00-557d-4e54-86ec-e5e1506fb4ca"
       ],
       "settings": {
-        "bg": "",
+        "bg": "#f5f5f5",
         "title": "New Arrival",
         "img_width": 250,
         "cell_align": "left",
