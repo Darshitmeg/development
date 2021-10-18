@@ -56,9 +56,9 @@ max_height: <number>
 
 
 <img  alt="{{ alt | escape }}"
-        {% if low_quality_image %}
-          src="{{ low_quality_image }}"
-        {% endif %}
+        
+          src="{{ image | img_url: 'master  }}"
+        
         data-src="{{ image | img_url: '1600x' }}"
         data-sizes="auto"
         data-aspectratio="{{ image.width }}/{{ image.height }}"
