@@ -56,16 +56,11 @@ max_height: <number>
 
 <div class="image_wrap">
 <img  alt="{{ alt | escape }}"
-        
-          src="{{ image | img_url: 'master'  }}"
-        
-        data-src="{{ image | img_url: '1600x' }}"
-        
-        data-aspectratio="{{ image.width }}/{{ image.height }}"
-        data-srcset="{{ srcset }}"
-        height="{{ image.height }}"
-        width="{{ image.width }}"
-        style="{{ inline_style }};"
-        
-  />
+      src="{{ image | img_url: 'master'  }}"
+      data-src="{{ image | img_url: '1600x' }}"
+      data-aspectratio="{{ image.width }}/{{ image.height }}"
+      data-srcset="{{ srcset }}"
+      height="{{ image.height }}"
+      width="{{ image.width }}"
+      style="{{ inline_style }};">
 </div>
