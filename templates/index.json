@@ -277,7 +277,7 @@
         "bg": "",
         "title": "Flickity Item Slider",
         "img_width": 200,
-        "cell_align": "center",
+        "cell_align": "left",
         "title_mb": 48,
         "cell_width": "25%",
         "wrap_around": "true",
