@@ -54,7 +54,7 @@ max_height: <number>
   {%- endcapture -%}
 {% endif %}
 
-
+<div class="image_wrap">
 <img  alt="{{ alt | escape }}"
         
           src="{{ image | img_url: 'master'  }}"
@@ -68,3 +68,4 @@ max_height: <number>
         style="{{ inline_style }};"
         
   />
+</div>
