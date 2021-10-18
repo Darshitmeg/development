@@ -229,6 +229,11 @@
         "wrap_around": "false",
         "mr": 16
       }
+    },
+    "1634535825fb54f08a": {
+      "type": "collection_tabs",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -238,6 +243,7 @@
     "collage",
     "video",
     "multi_column",
-    "1634201288de856b46"
+    "1634201288de856b46",
+    "1634535825fb54f08a"
   ]
 }
