@@ -234,6 +234,55 @@
       "type": "collection_tabs",
       "settings": {
       }
+    },
+    "16345478634b59cebe": {
+      "type": "hero-slider",
+      "blocks": {
+        "16345478634b59cebe-0": {
+          "type": "slide",
+          "settings": {
+            "url": "",
+            "title": ""
+          }
+        },
+        "16345478634b59cebe-1": {
+          "type": "slide",
+          "settings": {
+            "url": "",
+            "title": ""
+          }
+        },
+        "16345478634b59cebe-2": {
+          "type": "slide",
+          "settings": {
+            "url": "",
+            "title": ""
+          }
+        },
+        "16345478634b59cebe-3": {
+          "type": "slide",
+          "settings": {
+            "url": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "16345478634b59cebe-0",
+        "16345478634b59cebe-1",
+        "16345478634b59cebe-2",
+        "16345478634b59cebe-3"
+      ],
+      "settings": {
+        "bg": "",
+        "title": "Flickity Item Slider",
+        "img_width": 200,
+        "cell_align": "center",
+        "title_mb": 48,
+        "cell_width": "25%",
+        "wrap_around": "true",
+        "mr": 16
+      }
     }
   },
   "order": [
@@ -244,6 +293,7 @@
     "video",
     "multi_column",
     "1634201288de856b46",
-    "1634535825fb54f08a"
+    "1634535825fb54f08a",
+    "16345478634b59cebe"
   ]
 }
