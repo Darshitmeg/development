@@ -3,46 +3,79 @@
     "16345478634b59cebe": {
       "type": "hero-slider",
       "blocks": {
-        "9c93e902-5225-4ada-9b49-2f0920f1c6d1": {
-          "type": "select",
+        "eead5e8d-8704-4e09-a987-9d34886bbeff": {
+          "type": "image",
           "settings": {
-            "slide_bg": "shopify:\/\/shop_images\/hero_2.png",
-            "main_title": "",
-            "sub_title": "",
-            "slide_url": "",
-            "slide_url_text": ""
+            "image": "shopify:\/\/shop_images\/hero.png",
+            "pretext": "",
+            "title": "Your headline",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original",
+            "mobile_image_crop": "none"
           }
         },
-        "cd6ef064-1de8-4d7d-90dc-2647be669873": {
-          "type": "select",
+        "a0607363-71ac-43f1-9d79-6fb049d725d4": {
+          "type": "image",
           "settings": {
-            "slide_bg": "shopify:\/\/shop_images\/hero_1.png",
-            "main_title": "",
-            "sub_title": "",
-            "slide_url": "",
-            "slide_url_text": ""
+            "image": "shopify:\/\/shop_images\/hero_1.png",
+            "pretext": "",
+            "title": "Your headline",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original",
+            "mobile_image_crop": "none"
           }
         },
-        "b0ad6790-9a1e-45fb-8585-5795c33b2478": {
-          "type": "select",
+        "ec61cd3a-1ecc-4bef-901a-e466fb2f88b1": {
+          "type": "image",
           "settings": {
-            "slide_bg": "shopify:\/\/shop_images\/hero.png",
-            "main_title": "",
-            "sub_title": "",
-            "slide_url": "",
-            "slide_url_text": ""
+            "image": "shopify:\/\/shop_images\/hero_2.png",
+            "pretext": "",
+            "title": "Your headline",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original",
+            "mobile_image_crop": "none"
           }
         }
       },
       "block_order": [
-        "9c93e902-5225-4ada-9b49-2f0920f1c6d1",
-        "cd6ef064-1de8-4d7d-90dc-2647be669873",
-        "b0ad6790-9a1e-45fb-8585-5795c33b2478"
+        "eead5e8d-8704-4e09-a987-9d34886bbeff",
+        "a0607363-71ac-43f1-9d79-6fb049d725d4",
+        "ec61cd3a-1ecc-4bef-901a-e466fb2f88b1"
       ],
       "settings": {
-        "opacity": 0,
-        "text_color": "#ffffff",
-        "slide_controls": true
+        "wide_display": true,
+        "slideshow_text_animation": "fadeInDown",
+        "slideshow_animation": "fade",
+        "slideshow_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
       }
     },
     "image_banner": {
