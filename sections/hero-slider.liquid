@@ -3,10 +3,6 @@
   {% for block in section.blocks %}
   {% if block.settings.image %}
   {% render 'image-element', image: block.settings.image, alt: block.settings.image.alt, stretch_width: true, additional_classes: mobile_crop %}
-
-  {% if block.settings.caption_content_background == 'darken_bg' %}
-  <div class="darken-bg"></div>
-  {% endif %}
   {% else %}
   {% capture i %}{% cycle "1", "2" %}{% endcapture %}
   {{ 'lifestyle-' | append: i | placeholder_svg_tag: 'placeholder-svg placeholder-svg--slideshow' }}
