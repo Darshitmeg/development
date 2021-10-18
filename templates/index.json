@@ -1,5 +1,50 @@
 {
   "sections": {
+    "16345478634b59cebe": {
+      "type": "hero-slider",
+      "blocks": {
+        "9c93e902-5225-4ada-9b49-2f0920f1c6d1": {
+          "type": "select",
+          "settings": {
+            "slide_bg": "shopify:\/\/shop_images\/hero_2.png",
+            "main_title": "",
+            "sub_title": "",
+            "slide_url": "",
+            "slide_url_text": ""
+          }
+        },
+        "cd6ef064-1de8-4d7d-90dc-2647be669873": {
+          "type": "select",
+          "settings": {
+            "slide_bg": "shopify:\/\/shop_images\/hero_1.png",
+            "main_title": "",
+            "sub_title": "",
+            "slide_url": "",
+            "slide_url_text": ""
+          }
+        },
+        "b0ad6790-9a1e-45fb-8585-5795c33b2478": {
+          "type": "select",
+          "settings": {
+            "slide_bg": "shopify:\/\/shop_images\/hero.png",
+            "main_title": "",
+            "sub_title": "",
+            "slide_url": "",
+            "slide_url_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "9c93e902-5225-4ada-9b49-2f0920f1c6d1",
+        "cd6ef064-1de8-4d7d-90dc-2647be669873",
+        "b0ad6790-9a1e-45fb-8585-5795c33b2478"
+      ],
+      "settings": {
+        "opacity": 20,
+        "text_color": "#ffffff",
+        "slide_controls": true
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -234,32 +279,10 @@
       "type": "collection_tabs",
       "settings": {
       }
-    },
-    "16345478634b59cebe": {
-      "type": "hero-slider",
-      "blocks": {
-        "9c93e902-5225-4ada-9b49-2f0920f1c6d1": {
-          "type": "select",
-          "settings": {
-            "slide_bg": "shopify:\/\/shop_images\/hero_2.png",
-            "main_title": "",
-            "sub_title": "",
-            "slide_url": "",
-            "slide_url_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "9c93e902-5225-4ada-9b49-2f0920f1c6d1"
-      ],
-      "settings": {
-        "opacity": 20,
-        "text_color": "#ffffff",
-        "slide_controls": true
-      }
     }
   },
   "order": [
+    "16345478634b59cebe",
     "image_banner",
     "rich_text",
     "featured_products",
@@ -267,7 +290,6 @@
     "video",
     "multi_column",
     "1634201288de856b46",
-    "1634535825fb54f08a",
-    "16345478634b59cebe"
+    "1634535825fb54f08a"
   ]
 }
