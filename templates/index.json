@@ -20,18 +20,12 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/hero_2.png"
           }
-        },
-        "184474de-0597-468b-9745-31cd8beb3d71": {
-          "type": "image",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "eead5e8d-8704-4e09-a987-9d34886bbeff",
         "a0607363-71ac-43f1-9d79-6fb049d725d4",
-        "ec61cd3a-1ecc-4bef-901a-e466fb2f88b1",
-        "184474de-0597-468b-9745-31cd8beb3d71"
+        "ec61cd3a-1ecc-4bef-901a-e466fb2f88b1"
       ],
       "settings": {
         "wide_display": false,
