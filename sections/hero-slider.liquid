@@ -1,12 +1,22 @@
 <div class="carousel hero_slider"
      data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
   {% for block in section.blocks %}
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+  {% if block.settings.image %}
+  {%
+                  render 'image-element',
+  image: block.settings.image,
+  alt: block.settings.image.alt,
+  stretch_width: true,
+  additional_classes: mobile_crop
+  %}
+
+  {% if block.settings.caption_content_background == 'darken_bg' %}
+  <div class="darken-bg"></div>
+  {% endif %}
+  {% else %}
+  {% capture i %}{% cycle "1", "2" %}{% endcapture %}
+  {{ 'lifestyle-' | append: i | placeholder_svg_tag: 'placeholder-svg placeholder-svg--slideshow' }}
+  {% endif %}	
   {% endfor %}
 </div>
 
