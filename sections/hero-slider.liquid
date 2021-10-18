@@ -1,191 +1,308 @@
-{% comment %}
-  * Make sure you have the Flickity plugin installed and the proper license for this to function on your store
-  * Plugin, licensing and documentation at https://flickity.metafizzy.co/
-{% endcomment %}
+{% assign text_color = section.settings.text_color %}
+{% assign overlay = section.settings.opacity | times: 0.01 %}
 
-{% assign cell_align = section.settings.cell_align %}
-{% assign wrap_around = section.settings.wrap_around %}
-{% assign img_width = section.settings.img_width | append: 'x' %}
-
-<div class="flickity-section-{{ section.id }} flickity-index-slider item" style="background-color: {{ section.settings.bg }}">
-  <div class="page-width">
-    <div>
-      <p class="text-title text-center" style="margin-bottom:{{ section.settings.title_mb }}px">{{ section.settings.title }}</p>
-    </div>
-    <div class="flickity-section__carousel carousel-{{section.id }} text-center"
-        data-flickity='{
-          "cellAlign": "{{ cell_align }}",
-          "pageDots": false,
-          "freeScroll": true,
-          "contain": true,
-          "wrapAround": {{ wrap_around }}
-        }'>
-      {% for block in section.blocks %}
-        {% assign block_img = block.settings.img %}
-        {% assign block_url = block_product.selected_or_first_available_variant %}
-        {% assign featured_img_src = block_first_variant.featured_img.src | default: block_product.featured_image.src %}
-        <div class="carousel__cell" style="width:{{ section.settings.cell_width }};margin-right:{{ section.settings.mr }}px">
-          {% if block.settings.img != blank %}
-            <a href="{{ block.settings.url }}">
-              <img src="{{ block.settings.img | img_url: img_width }}" alt="{{ block.settings.img_alt }}" />
-            </a>
-          {% else %}
-            {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
-          {% endif %}
-          <a href="{{ block.settings.url }}">
-            <h5>{{ block.settings.title }}</h5>
-          </a>
-        </div>
-      {% endfor %}
+<div id="sliderContainer" class="slider-container" style="color:{{ text_color }};">
+  {% for block in section.blocks %}
+  <div class="hero-slide" style="background-image:url({{ block.settings.slide_bg | img_url: 'original' }});">
+    <div class="page-width hero-slide-content">
+      <h2>{{ block.settings.main_title }}</h2>
+      <p style="color:{{ text_color }};">{{ block.settings.sub_title }}</p>
+      <a style="color:{{ text_color }};border-color:{{ text_color }};" href="{{ block.settings.slide_url}}">{{ block.settings.slide_url_text }}</a>
     </div>
   </div>
+  {% endfor %}
+  {% if section.settings.slide_controls == true %}
+    <div id="sliderControls" class="slider-controls">
+      <span id="slideCurrent"></span> / <span id="slideTotal"></span>
+      <span id="prev" class="slider-button prev">
+        <svg class="slider__svg-button prev" viewBox="0 0 100 100"><path style="fill:{{text_color}};" d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg>
+      </span>
+      <span id="next" class="slider-button next">
+        <svg class="slider__svg-button next" viewBox="0 0 100 100"><path style="fill:{{text_color}};" d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
+      </span>
+    </div>
+  {% endif %}
 </div>
+
+<style>
+  .hero-slide:after {
+    opacity: {{ overlay }};
+  }
+</style>
 
 {% schema %}
   {
-    "name": "Hero Slider",
+    "name": "Full Height Hero Slider",
     "settings": [
       {
-        "type": "color",
-        "id": "bg",
-        "label": "Background Color"
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title",
-        "default": "Flickity Item Slider"
-      },
-      {
         "type": "range",
-        "id": "img_width",
-        "min": 200,
-        "max": 600,
-        "step": 5,
-        "unit": "px",
-        "label": "Image Width",
-        "default": 200
-      },
-      {
-        "type": "select",
-        "id": "cell_align",
-        "label": "Slide Alignment",
-        "options": [
-          {
-            "value": "center",
-            "label": "Center"
-          },
-          {
-            "value": "left",
-            "label": "Left"
-          }
-        ],
-        "default": "center"
-      },
-      {
-        "type": "range",
-        "id": "title_mb",
-        "min": 30,
-        "max": 120,
-        "step": 1,
-        "unit": "px",
-        "label": "Title Margin Bottom",
-        "default": 48
-      },
-      {
-        "type": "select",
-        "id": "cell_width",
-        "label": "Choose number of slides to show on start",
-        "options": [
-          {
-            "value": "25%",
-            "label": "Four"
-          },
-          {
-            "value": "20%",
-            "label": "Five"
-          },
-          {
-            "value": "16.6666667%",
-            "label": "Six"
-          },
-          {
-            "value": "12.5%",
-            "label": "Eight"
-          }
-        ],
-        "default": "25%"
-      },
-      {
-        "type": "radio",
-        "id": "wrap_around",
-        "label": "Enable Wrap Around (endless scrolling)",
-        "options": [
-          {
-            "value": "true",
-            "label": "True"
-          },
-          {
-            "value": "false",
-            "label": "False"
-          }
-        ],
-        "default": "true"
-      },
-      {
-        "type": "range",
-        "id": "mr",
+        "id": "opacity",
+        "label": "Select Hero Overlay Opacity",
         "min": 0,
-        "max": 48,
+        "max": 100,
         "step": 1,
-        "unit": "px",
-        "label": "Cell Margin Right",
-        "default": 16,
-        "info": "Save page to see changes."
+        "unit": "%",
+        "default": 20
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Choose text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_controls",
+        "label": "Show slide controls and count",
+        "default": true
       }
     ],
     "blocks": [
       {
-        "type": "slide",
-        "name": "slide",
+        "type": "select",
+        "name": "Slide",
         "settings": [
           {
             "type": "image_picker",
-            "id": "img",
-            "label": "Choose an Image"
-          },
-          {
-            "type": "url",
-            "id": "url",
-            "label": "Choose a Link"
+            "id": "slide_bg",
+            "label": "Slide Background"
           },
           {
             "type": "text",
-            "id": "title",
-            "label": "Title for your Item"
+            "id": "main_title",
+            "label": "Slide Title"
+          },
+          {
+            "type": "text",
+            "id": "sub_title",
+            "label": "Slide Subtitle"
+          },
+          {
+            "type": "url",
+            "id": "slide_url",
+            "label": "Slide URL"
+          },
+          {
+            "type": "text",
+            "id": "slide_url_text",
+            "label": "Slide Button Text"
           }
         ]
       }
     ],
     "presets": [
       {
-        "name": "Slider",
+        "name": "Full Height Hero Slider",
         "category": "Slider",
         "blocks": [
           {
-            "type": "slide"
-          },
-          {
-            "type": "slide"
-          },
-          {
-            "type": "slide"
-          },
-          {
-            "type": "slide"
+            "type": "select"
           }
         ]
       }
     ]
   }
 {% endschema %}
+
+{% stylesheet 'scss' %}
+.slider-container {
+  position: relative;
+  height: 100vh;
+}
+.hero-slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.hero-slide:after {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 3;
+}
+
+.slide-active {
+opacity: 1;
+visibility: visible;
+}
+
+.hero-slide-content {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+z-index: 5;
+h2{
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 0.85em;
+  text-transform: uppercase;
+  max-width: 1000px;
+  @media(max-width:1024px){
+    font-size: 64px;
+    line-height: 0.9em;
+  }
+  @media(max-width:767px){
+    font-size: 60px;
+  }
+  @media(max-width:480px){
+    font-size: 50px;
+  }
+}
+p {
+  font-size: 16px;
+  line-height: 1.4em;
+  max-width: 510px;
+  padding-left: 12px;
+  @media(max-width:1024px){
+    padding: 0;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  @media(max-width:767px){
+    display: none;
+  }
+}
+a {
+  display: inline-block;
+  font-size: 12px;
+  border: 2px solid;
+  padding: 15px 40px;
+  margin-top: 30px;
+  margin-left: 12px;
+  @media(max-width:1024px){
+    margin-left: 0;
+  }
+}
+@media(max-width:1024px){
+  left: 50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+}
+}
+
+.slider-controls {
+position: absolute;
+bottom: 27px;
+left: 30px;
+z-index: 5;
+opacity: 0.3;
+width: 200px;
+}
+
+.slider-button {
+display: inline-block;
+border: 1px solid;
+width: 45px;
+height: 45px;
+border-radius: 50%;
+padding: 12px;
+margin-left: 15px;
+cursor: pointer;
+opacity: 0.6;
+@media(max-width:767px){
+  display: none;
+}
+}
+
+.slider__svg-button path.arrow {
+
+}
+
+.slider__svg-button {
+width: 14px;
+margin-left: 2px;
+}
+
+div.prev-btn {
+border-bottom: 1px solid #000000;
+border-left: 1px solid #000000;
+opacity: 0.3;
+}
+#slideCurrent {
+opacity: 0.9;
+}
+{% endstylesheet %}
+
+{% javascript %}
+// Hero slider
+$(document).ready(function(){
+  let slideImages = $('.hero-slide');
+  let current = 0;
+  let interval = setInterval(function(){
+    nextSlide();
+  },5000);
+
+
+  $('#sliderContainer').on('mouseenter', function(){
+    clearInterval(interval);
+  });
+
+
+  // Clear All Images
+  function reset(){
+    for(let i = 0; i < slideImages.length; i++){
+      slideImages[i].classList.remove('slide-active');
+    }
+  }
+
+  function startSlide(){
+    reset();
+    slideImages[0].classList.add('slide-active');
+    $('#slideCurrent').text(current + 1);
+  }
+
+  // Show Prev
+  function slideLeft(){
+    reset();
+    slideImages[current - 1].classList.add('slide-active');
+    current--;
+  }
+
+  // Left Arrow Click
+  $('#prev').on('click', function(){
+    if(current === 0){
+      current=slideImages.length;
+    }
+    slideLeft()
+    $('#slideCurrent').text(current + 1);
+  })
+
+  // Show Next
+  function slideRight(){
+      reset();
+      slideImages[current + 1].classList.add('slide-active');
+      current++;
+  }
+
+  function nextSlide(){
+    if(current === slideImages.length -1){
+      current=-1;
+    }
+    slideRight()
+    $('#slideCurrent').text(current +1);
+  }
+
+  //Right Arrow Click
+  $('#next').on('click', function(){
+    nextSlide();
+  })
+
+  // Insert Total Slides
+  $('#slideTotal').text(slideImages.length);
+
+  startSlide();
+});
+{% endjavascript %}
