@@ -1,7 +1,8 @@
 <div class="carousel hero_slider"
      data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+
+  {% for block in section.blocks %}
   <div class="gallery-cell">
-    {% for block in section.blocks %}
     {% if block.settings.image %}
     {% render 'image-element', image: block.settings.image, alt: block.settings.image.alt, stretch_width: true, additional_classes: mobile_crop %}
     {% endif %}	
@@ -34,8 +35,9 @@
       </div>
       {% endunless %}
     </div>
-    {% endfor %}
   </div>
+  {% endfor %}
+
 </div>
 
 <style>
