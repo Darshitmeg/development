@@ -93,6 +93,57 @@
         "full_width": true
       }
     },
+    "featured_products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "collection": "all",
+        "products_to_show": 2,
+        "show_view_all": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "163463424591d43715": {
+      "type": "image-with-text",
+      "blocks": {
+        "163463424591d43715-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "163463424591d43715-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163463424591d43715-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "163463424591d43715-0",
+        "163463424591d43715-1",
+        "163463424591d43715-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -128,22 +179,6 @@
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "collection": "all",
-        "products_to_show": 2,
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": false,
-        "show_rating": false
       }
     },
     "collage": {
@@ -290,6 +325,7 @@
     },
     "1634535825fb54f08a": {
       "type": "collection_tabs",
+      "disabled": true,
       "settings": {
       }
     }
@@ -297,8 +333,9 @@
   "order": [
     "16345478634b59cebe",
     "rich_text",
-    "image_banner",
     "featured_products",
+    "163463424591d43715",
+    "image_banner",
     "collage",
     "video",
     "multi_column",
