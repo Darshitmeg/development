@@ -5,12 +5,16 @@
   {% render 'image-element', image: block.settings.image, alt: block.settings.image.alt, stretch_width: true, additional_classes: mobile_crop %}
   {% endif %}	
   <div class="slider-caption content">
-    <div class="text-block">
-      <h1></h1>
-      <p></p>
-      <button></button>
+    <div class="caption position-right js-caption">
+      <div class="caption-content align-left animated fadeInDown">
+        <div class="pretext">
+          <p>Short text that precedes the headline</p>
+        </div>
+        <p class="headline">Your headline here</p>
+        <div class="subtitle"><p>This is a short subheading for your slideshow image</p>
+        </div>
+      </div>
     </div>
-  
   </div>
   {% endfor %}
 </div>
