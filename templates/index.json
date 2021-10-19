@@ -7,7 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/hero_1.png",
-            "pretext": "<p>sUB TITLE<\/p>",
+            "pretext": "<p>Sub Title<\/p>",
             "title": "Your headline",
             "subtitle": "",
             "button1": "",
