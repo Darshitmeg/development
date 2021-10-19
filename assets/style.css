@@ -757,20 +757,20 @@ img[data-flickity-lazyload] {
 .caption-content {
   padding: 30px;
 }
-.caption-content h1 {
+.Caption-content h1 {
   padding-top: 0;
 }
-.caption-content > *:only-child {
+.Caption-content > *:only-child {
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 480px) {
-  .caption-content {
+  .Caption-content {
     padding: 15px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .caption--below-true .caption-content {
+  .Caption--below-true .Caption-content {
     padding: 0px;
   }
 }
