@@ -741,20 +741,20 @@ img[data-flickity-lazyload] {
     max-width: 100%;
   }
 }
-.caption-content.align-left {
+.Caption-content.align-left {
   text-align: left;
 }
-.caption-content.align-left .subtitle:before {
+.Caption-content.align-left .subtitle:before {
   margin-left: 0;
 }
-.caption-content.align-right {
+.Caption-content.align-right {
   text-align: right;
 }
-.caption-content.align-right .subtitle:before {
+.Caption-content.align-right .subtitle:before {
   margin-right: 0;
 }
 
-.caption-content {
+.Caption-content {
   padding: 30px;
 }
 .Caption-content h1 {
