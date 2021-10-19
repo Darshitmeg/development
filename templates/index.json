@@ -21,10 +21,30 @@
             "caption_content_background": "original",
             "mobile_image_crop": "none"
           }
+        },
+        "4db61ed7-d66a-41a2-baeb-0f7f0e973600": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero.png",
+            "pretext": "",
+            "title": "Your headline",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original",
+            "mobile_image_crop": "none"
+          }
         }
       },
       "block_order": [
-        "d3bcc3cf-3a14-448c-9e36-ab1848f8adba"
+        "d3bcc3cf-3a14-448c-9e36-ab1848f8adba",
+        "4db61ed7-d66a-41a2-baeb-0f7f0e973600"
       ],
       "settings": {
         "wide_display": true,
