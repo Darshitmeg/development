@@ -149,6 +149,7 @@
       "blocks": {
         "heading": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Talk about your brand",
             "heading_size": "medium"
@@ -156,6 +157,7 @@
         },
         "button": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/all",
@@ -171,12 +173,14 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/pexels-melvin-buezo-2529148.jpg",
+        "image_2": "shopify:\/\/shop_images\/pexels-flat-hito-904350.jpg",
         "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
-        "show_text_box": true,
+        "show_text_box": false,
         "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
