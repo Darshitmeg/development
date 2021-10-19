@@ -562,12 +562,7 @@ img[data-flickity-lazyload] {
   text-align: right;
 }
 .Caption .pretext {
-  color: ;
-  font-family: , ;
-  font-weight: ;
-  text-transform: ;
-  font-size: px;
-  letter-spacing: px;
+ 
   margin-bottom: 10px;
 }@media only screen and (max-width: 480px) {
   .Caption .pretext {
@@ -576,27 +571,21 @@ img[data-flickity-lazyload] {
 }
 @media only screen and (max-width: 798px) {
   .Caption .pretext {
-    font-size: 0.0px;
+    
   }
 }
 @media only screen and (min-width: 799px) {
   .Caption .pretext {
-    font-size: 0.0px;
+    
   }
 }
 @media only screen and (min-width: 799px) {
   .Caption .pretext {
-    font-size: px;
+    
   }
 }
 .Caption .headline {
-  color: ;
-  font-family: , ;
-  font-weight: ;
-  font-style: ;
-  text-transform: ;
-  font-size: px;
-  letter-spacing: px;
+  
   line-height: 1.4em;
   margin-bottom: 15px;
 }@media only screen and (max-width: 480px) {
@@ -606,27 +595,21 @@ img[data-flickity-lazyload] {
 }
 @media only screen and (max-width: 798px) {
   .Caption .headline {
-    font-size: 0.0px;
+    
   }
 }
 @media only screen and (min-width: 799px) {
   .Caption .headline {
-    font-size: 0.0px;
+    
   }
 }
 @media only screen and (min-width: 1025px) {
   .Caption .headline {
-    font-size: px;
+    
   }
 }
 .Caption .subtitle {
-  color: ;
-  font-family: , ;
-  font-weight: ;
-  text-transform: ;
-  font-style: ;
-  font-size: px;
-  letter-spacing: px;
+  
   position: relative;
 }@media only screen and (max-width: 480px) {
   .Caption .subtitle {
@@ -635,17 +618,17 @@ img[data-flickity-lazyload] {
 }
 @media only screen and (max-width: 798px) {
   .Caption .subtitle {
-    font-size: 0.0px;
+    
   }
 }
 @media only screen and (min-width: 799px) {
   .Caption .subtitle {
-    font-size: 0.0px;
+    
   }
 }
 @media only screen and (min-width: 1025px) {
   .caption .subtitle {
-    font-size: px;
+    
   }
 }
 .Caption .pretext:empty,
