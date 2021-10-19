@@ -8,8 +8,8 @@
     {% endif %}	
     <div class="slider-caption content">
       {% unless block.settings.pretext == blank and block.settings.title == blank and block.settings.subtitle == blank and block.settings.button1 == blank and block.settings.button2 == blank %}
-      <div class="caption position-{{ block.settings.text_position }} js-caption">
-        <div class="caption-content align-{{ block.settings.text_align }}">
+      <div class="Caption position-{{ block.settings.text_position }} js-caption">
+        <div class="Caption-content align-{{ block.settings.text_align }}">
           {% if block.settings.pretext != blank %}
           <div class="pretext">
             {{ block.settings.pretext }}
