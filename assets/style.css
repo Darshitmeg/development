@@ -659,7 +659,7 @@ img[data-flickity-lazyload] {
 }
 @media only screen and (max-width: 480px) {
   .Caption--below-true .pretext {
-    color: ;
+    
     text-shadow: none;
   }
 }
