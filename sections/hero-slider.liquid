@@ -5,16 +5,33 @@
   {% render 'image-element', image: block.settings.image, alt: block.settings.image.alt, stretch_width: true, additional_classes: mobile_crop %}
   {% endif %}	
   <div class="slider-caption content">
-    <div class="caption position-right js-caption">
-      <div class="caption-content align-left animated fadeInDown">
+    {% unless block.settings.pretext == blank and block.settings.title == blank and block.settings.subtitle == blank and block.settings.button1 == blank and block.settings.button2 == blank %}
+    <div class="caption position-{{ block.settings.text_position }} js-caption">
+      <div class="caption-content align-{{ block.settings.text_align }}">
+        {% if block.settings.pretext != blank %}
         <div class="pretext">
-          <p>Short text that precedes the headline</p>
+          {{ block.settings.pretext }}
         </div>
-        <p class="headline">Your headline here</p>
-        <div class="subtitle"><p>This is a short subheading for your slideshow image</p>
+        {% endif %}
+
+        {% if forloop.first == true and block.settings.title != blank %}
+        <h1 class="headline">
+          {{ block.settings.title }}
+        </h1>
+        {% elsif block.settings.title != blank %}
+        <p class="headline">
+          {{ block.settings.title }}
+        </p>
+        {% endif %}
+
+        {% if block.settings.subtitle != blank %}
+        <div class="subtitle">
+          {{ block.settings.subtitle }}
         </div>
+        {% endif %}
       </div>
     </div>
+    {% endunless %}
   </div>
   {% endfor %}
 </div>
