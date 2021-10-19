@@ -321,11 +321,11 @@
     "video": {
       "type": "video",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "cover_image": "shopify:\/\/shop_images\/video_cover_2f366625-bc92-476c-b2ee-eedfa2488119_1500x_1.png",
         "video_url": "https:\/\/www.youtube.com\/watch?v=yXWXFzjVnt8",
-        "description": "",
-        "full_width": false
+        "description": "Bags",
+        "full_width": true
       }
     },
     "1634535825fb54f08a": {
