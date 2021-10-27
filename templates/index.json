@@ -363,7 +363,7 @@
       ],
       "settings": {
         "look_book_img1": "shopify:\/\/shop_images\/hero.png",
-        "direction": "column"
+        "direction": "row"
       }
     },
     "16346358968632f4ae": {
