@@ -346,11 +346,20 @@
             "look_book_img": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
             "look_book_description": "test2"
           }
+        },
+        "9c61f486-4f76-44c9-a525-e8c506a74484": {
+          "type": "Grid_images",
+          "settings": {
+            "lbdate": "2020",
+            "look_book_img": "shopify:\/\/shop_images\/pexels-melvin-buezo-2529148.jpg",
+            "look_book_description": "test3"
+          }
         }
       },
       "block_order": [
         "f2fb3071-78c2-4725-a97a-1d6f79154fa2",
-        "bc5f15db-6b5c-4e88-aadb-97a76e77c282"
+        "bc5f15db-6b5c-4e88-aadb-97a76e77c282",
+        "9c61f486-4f76-44c9-a525-e8c506a74484"
       ],
       "settings": {
         "look_book_img1": "shopify:\/\/shop_images\/hero.png",
