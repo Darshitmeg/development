@@ -1,19 +1,291 @@
-<ul>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-</ul>
+
+  
+
+<section class="lookbook_section">
+  <h3> Look Book </h3>
+  <div id="allTabsContainer">
+   {% for block in section.blocks %}
+  
+  <div class="tab-container look_book_div" data-tab-index="{{ forloop.index }}" {% if forloop.index != 1 %}style="display:none;" {% endif %}>
+   
+    
+    <div class="griimages">
+      <img src={{  block.settings.look_book_img | img_url: 'master'}}>
+    </div>
+    <div class="grid_content">
+     
+      
+      <p class="grid_text">{{ block.settings.look_book_description  }}</p>
+      <button>send</button>
+    </div>
+     
+   
+
+  </div>
+
+  {% endfor%}
+      </div>
+  <div class="lookbook_tabing">
+    <ul>
+        {% for block in section.blocks %}
+   
+      
+  
+      <li class="tab-switcher" data-tab-index="{{ forloop.index }}" tabindex="0">{{ block.settings.lbdate }}</li>
+       {% endfor%}
+<!--       <li data-content-id="tab-content-2">2020</li>
+      <li data-content-id="tab-content-3">2021</li> -->
+     
+    </ul>
+  </div>
+  
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+
+    <script>
+      $(document).ready(function () {
+        var previousActiveTabIndex = 0;
+
+        $(".tab-switcher").on('click keypress', function (event) {
+          // event.which === 13 means the "Enter" key is pressed
+
+          if ((event.type === "keypress" && event.which === 13) || event.type === "click") {
+
+            var tabClicked = $(this).data("tab-index");
+
+            if(tabClicked != previousActiveTabIndex) {
+              $("#allTabsContainer .tab-container").each(function () {
+                if($(this).data("tab-index") == tabClicked) {
+                  $(".tab-container").hide();
+                  $(this).show();
+                  previousActiveTabIndex = $(this).data("tab-index");
+                  return;
+                }
+              });
+            }
+          }
+        });
+      });
+    </script>
+
+    
+<!--       <script>
+
+
+
+
+
+
+$(document).ready(function () {
+    var previousActiveTabIndex = 0;
+
+    $(".tab_switcher").on('click keypress', function (event) {
+        // event.which === 13 means the "Enter" key is pressed
+
+        if ((event.type === "keypress" && event.which === 13) || event.type === "click") {
+
+            var tabClicked = $(this).data("data-content-id");
+
+            if(tabClicked != previousActiveTabIndex) {
+                $("#all_switcher_content .look_book_div").each(function () {
+                    if($(this).data("data-content-id") == tabClicked) {
+                        $(".look_book_div").hide();
+                        $(this).show();
+                        previousActiveTabIndex = $(this).data("data-content-id");
+                        return;
+                    }
+                });
+            }
+        }
+    });
+});
+</script> -->
+
 
 {% schema %}
   {
-    "name": "Collection Tabs Section",
-    "settings": [],
-    "presets": [
+    "name": "Look Book",
+    "settings": [
+
+
+{
+
+  "type": "image_picker",
+  "id": "look_book_img1",
+  "label": "Look book"
+}, {
+
+    "type": "radio",
+    "id": "direction",
+    "label": "Section alignment",
+    "options": [
+
       {
-        "name": "Collection Tabs",
-        "category": "Collections"
-      }
-    ]
+
+    "value": "row",
+    "label": "Row"
+
+    },
+
+    {
+
+    "value": "column",
+    "label": "Column"
+
+    },
+
+    {
+
+    "value": "column-reverse",
+    "label": "Column Reverse"
+
+    },
+
+    {
+
+    "value": "row-reverse",
+    "label": "Row Reverse"
+
+    }
+
+    ],
+
+    "default": "row"
+    }
+  
+],
+ "blocks": [
+    {
+      "type": "Grid_images",
+      "name": "Grid Images",
+      "settings": [
+
+        {
+
+        "type": "text",
+        "id": "lbdate",
+        "label": "Add Tab Text"
+         },
+
+        {
+
+    "type": "image_picker",
+    "id": "look_book_img",
+    "label": "Look book"
+     },
+     {
+
+    "type": "text",
+    "id": "look_book_description",
+    "label": "description"
+     }
+
+
+   
+
+     
+       
+    
+    
+  ]
+}
+],
+
+"presets": [
+    {
+      "name": "Look Book"
+    }
+  ]
   }
+
 {% endschema %}
+
+<style>
+  
+    .look_book_div {
+      
+       display: flex;
+/*       align-items: center; */
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding:0px 0 50px 0;
+      flex-direction: {{ section.settings.direction  }};
+
+}
+  
+  .griimages
+  {
+  
+  width:50%;
+    max-width:500px;
+    margin:0 auto;
+  
+  }
+  
+  .grid_content {
+    width: 50%;
+}
+  
+  
+  .grid_content {
+    width: 50%;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+/*     text-align: center; */
+}
+  
+  .lookbook_tabing ul li {
+    display: inline-block;
+    padding: 20px 40px;
+}
+  
+.lookbook_tabing ul li {
+    display: inline-block;
+    padding: 8px 40px;
+    border: 1px solid black;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 10px;
+}  
+  
+  
+  
+  
+  
+.lookbook_tabing 
+{
+    text-align: center;
+}
+  
+.color-accent-1.gradient
+{
+    
+   padding:60px;
+}
+  
+button 
+{
+    background-color: #0e1f4a;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 37px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+  
+.newsletter__subheading.rte p {
+    margin-bottom: 25px !important;
+}
+  
+  section.lookbook_section {
+    margin-top: 150px;
+}
+
+</style>
+
+
