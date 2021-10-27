@@ -330,6 +330,19 @@
     },
     "1634535825fb54f08a": {
       "type": "collection_tabs",
+      "blocks": {
+        "f2fb3071-78c2-4725-a97a-1d6f79154fa2": {
+          "type": "Grid_images",
+          "settings": {
+            "lbdate": "2021",
+            "look_book_img": "shopify:\/\/shop_images\/video_cover_2f366625-bc92-476c-b2ee-eedfa2488119_1500x_1.png",
+            "look_book_description": "test"
+          }
+        }
+      },
+      "block_order": [
+        "f2fb3071-78c2-4725-a97a-1d6f79154fa2"
+      ],
       "settings": {
         "look_book_img1": "shopify:\/\/shop_images\/hero.png",
         "direction": "column"
