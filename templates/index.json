@@ -330,8 +330,8 @@
     },
     "1634535825fb54f08a": {
       "type": "collection_tabs",
-      "disabled": true,
       "settings": {
+        "direction": "row"
       }
     },
     "16346358968632f4ae": {
