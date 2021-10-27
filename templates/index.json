@@ -331,7 +331,8 @@
     "1634535825fb54f08a": {
       "type": "collection_tabs",
       "settings": {
-        "direction": "row"
+        "look_book_img1": "shopify:\/\/shop_images\/hero.png",
+        "direction": "column"
       }
     },
     "16346358968632f4ae": {
