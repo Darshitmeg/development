@@ -184,46 +184,43 @@ $(document).ready(function () {
 {% endschema %}
 
 <style>
-  
-    .look_book_div {
-      
-       display: flex;
-/*       align-items: center; */
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding:0px 0 50px 0;
-      flex-direction: {{ section.settings.direction  }};
 
-}
-  
+  .look_book_div {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:0px 0 50px 0;
+    flex-direction: {{ section.settings.direction  }};
+  }
+
   .griimages
   {
-  
-  width:50%;
+    width:50%;
     max-width:500px;
     margin:0 auto;
-  
+
   }
-  
+
   .grid_content {
     width: 50%;
-}
-  
-  
+  }
+
+
   .grid_content {
     width: 50%;
     padding: 30px;
     max-width: 700px;
     margin: 0 auto;
-/*     text-align: center; */
-}
-  
+    /*     text-align: center; */
+  }
+
   .lookbook_tabing ul li {
     display: inline-block;
     padding: 20px 40px;
-}
-  
-.lookbook_tabing ul li {
+  }
+
+  .lookbook_tabing ul li {
     display: inline-block;
     padding: 8px 40px;
     border: 1px solid black;
@@ -231,25 +228,25 @@ $(document).ready(function () {
     font-weight: 700;
     cursor: pointer;
     margin: 0 10px;
-}  
-  
-  
-  
-  
-  
-.lookbook_tabing 
-{
+  }  
+
+
+
+
+
+  .lookbook_tabing 
+  {
     text-align: center;
-}
-  
-.color-accent-1.gradient
-{
-    
-   padding:60px;
-}
-  
-button 
-{
+  }
+
+  .color-accent-1.gradient
+  {
+
+    padding:60px;
+  }
+
+  button 
+  {
     background-color: #0e1f4a;
     border: none;
     color: #fff;
@@ -257,14 +254,38 @@ button
     border-radius: 37px;
     font-size: 16px;
     text-transform: capitalize;
-}
-  
-.newsletter__subheading.rte p {
+  }
+
+  .newsletter__subheading.rte p {
     margin-bottom: 25px !important;
-}
-  
+  }
+
   section.lookbook_section {
     margin-top: 150px;
-}
+  }
+  .griimages img {
+    width: 100%;
+  }@media only screen and (max-width: 767px)
+  {
 
+    .griimages
+    {
+      width:100%
+    }
+
+    .grid_content
+    {
+      width:100%;
+    }
+  }ul {
+    padding-left: 0;
+  }@media only screen and (max-width:767px)
+  {
+
+    .lookbook_tabing ul li
+    {
+      padding:8px 20px;
+    }
+
+  }
 </style>
