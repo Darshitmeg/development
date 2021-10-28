@@ -280,7 +280,7 @@
         <li>
           {{ comment.content }}
           <span>{{ comment.author }}</span>
-  	      <span>{{ comment.created_at | time_tag: format: '%H:%M:%S' }}</span>
+  	      <span>{{ comment.created_at | date: format: '%H:%M:%S' }}</span>
         </li>
       {%- endif -%}
 
@@ -289,7 +289,7 @@
           <li>
             {{ comment.content }}
             <span>{{ comment.author }}</span>
-  	        <span>{{ comment.created_at | time_tag: format: '%H:%M:%S' }}</span>
+  	        <span>{{ comment.created_at | date: format: '%H:%M:%S' }}</span>
           </li>
         {% endunless %}
       {% endfor %}
