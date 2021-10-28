@@ -52,40 +52,6 @@
   });
 </script>
 
-    
-<!--       <script>
-
-
-
-
-
-
-$(document).ready(function () {
-    var previousActiveTabIndex = 0;
-
-    $(".tab_switcher").on('click keypress', function (event) {
-        // event.which === 13 means the "Enter" key is pressed
-
-        if ((event.type === "keypress" && event.which === 13) || event.type === "click") {
-
-            var tabClicked = $(this).data("data-content-id");
-
-            if(tabClicked != previousActiveTabIndex) {
-                $("#all_switcher_content .look_book_div").each(function () {
-                    if($(this).data("data-content-id") == tabClicked) {
-                        $(".look_book_div").hide();
-                        $(this).show();
-                        previousActiveTabIndex = $(this).data("data-content-id");
-                        return;
-                    }
-                });
-            }
-        }
-    });
-});
-</script> -->
-
-
 {% schema %}
 {
    "name":"Look Book",
