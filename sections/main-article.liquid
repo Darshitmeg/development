@@ -280,7 +280,7 @@
         <li>
           {{ comment.content }}
           <span>{{ comment.author }}</span>
-  	      <span>{{ comment.created_at | time_tag: format: 'month_day_year' }}</span>
+  	      <span>{{ comment.created_at | time_tag: format: '%H:%M:%S' }}</span>
         </li>
       {%- endif -%}
 
