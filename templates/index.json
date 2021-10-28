@@ -414,6 +414,7 @@
           "settings": {
             "title": "Product 3",
             "lbdate": "2013",
+            "look_book_img": "shopify:\/\/shop_images\/Step-3_1.jpg",
             "look_book_description": ""
           }
         }
