@@ -119,6 +119,8 @@
     var previousActiveTabIndex = 0;
 
     $(".tab-switcher").on('click keypress', function (event) {
+      $(this).siblings().removeClass("active");
+      $(this).addClass("active");
       // event.which === 13 means the "Enter" key is pressed
 
       if ((event.type === "keypress" && event.which === 13) || event.type === "click") {
