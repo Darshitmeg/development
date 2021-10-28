@@ -399,10 +399,28 @@
             "look_book_img": "shopify:\/\/shop_images\/Le-petit-Cartable-Bordeaux-featured_1.jpg",
             "look_book_description": "Leo et Violette's story is ours. We are Léo Dominguez & Violette Polchi. Two Parisian lovers sharing our life for more than 8 years. Ever since we met, we always had the dream to develop a project together. By creating Le petit cartable in January 2013, we started to realize this dream. Our first Kickstarter campaign is launched!"
           }
+        },
+        "5038ac6b-4234-4d7c-94e4-4330fdb2ff56": {
+          "type": "Grid_images",
+          "settings": {
+            "title": "Product 2",
+            "lbdate": "2012",
+            "look_book_description": ""
+          }
+        },
+        "510803f2-a95a-4a46-82ba-11ee2584ae2c": {
+          "type": "Grid_images",
+          "settings": {
+            "title": "Product 3",
+            "lbdate": "2013",
+            "look_book_description": ""
+          }
         }
       },
       "block_order": [
-        "1756a87c-96f1-465c-9e2b-e414737441c5"
+        "1756a87c-96f1-465c-9e2b-e414737441c5",
+        "5038ac6b-4234-4d7c-94e4-4330fdb2ff56",
+        "510803f2-a95a-4a46-82ba-11ee2584ae2c"
       ],
       "settings": {
         "title": "",
