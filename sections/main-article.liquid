@@ -121,6 +121,7 @@
                   {{ comment.content }}
                   <footer class="right">
                     <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span><span class="caption-with-letter-spacing">{{ comment.created_at | date: format: 'default' }}</span>
+                    <span class="caption-with-letter-spacing">{{ comment.updated_at | date: format: 'default' }}</span>
                   </footer>
                 </article>
               {%- endfor -%}
