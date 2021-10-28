@@ -85,101 +85,101 @@ $(document).ready(function () {
 
 
 {% schema %}
-  {
-    "name": "Look Book",
-    "settings": [
+{
+"name": "Look Book",
+"settings": [
 {
 
-    "type": "text",
-    "id": "title",
-    "label": "Title"
-     },
+"type": "text",
+"id": "title",
+"label": "Title"
+},
 
 {
 
-  "type": "image_picker",
-  "id": "look_book_img1",
-  "label": "Look book"
+"type": "image_picker",
+"id": "look_book_img1",
+"label": "Look book"
 }, {
 
-    "type": "radio",
-    "id": "direction",
-    "label": "Section alignment",
-    "options": [
+"type": "radio",
+"id": "direction",
+"label": "Section alignment",
+"options": [
 
-      {
-
-    "value": "row",
-    "label": "Row"
-
-    },
-
-    {
-
-    "value": "column",
-    "label": "Column"
-
-    },
-
-    {
-
-    "value": "column-reverse",
-    "label": "Column Reverse"
-
-    },
-
-    {
-
-    "value": "row-reverse",
-    "label": "Row Reverse"
-
-    }
-
-    ],
-
-    "default": "row"
-    }
-  
-],
- "blocks": [
-    {
-      "type": "Grid_images",
-      "name": "Grid Images",
-      "settings": [
 {
 
-    "type": "text",
-    "id": "title",
-    "label": "Title"
-     },
-        {
+"value": "row",
+"label": "Row"
 
-        "type": "text",
-        "id": "lbdate",
-        "label": "Add Tab Text"
-         },
+},
 
-        {
+{
 
-    "type": "image_picker",
-    "id": "look_book_img",
-    "label": "Look book"
-     },
-     {
-    "type": "text",
-    "id": "look_book_description",
-    "label": "description"
-     }  
-  ]
+"value": "column",
+"label": "Column"
+
+},
+
+{
+
+"value": "column-reverse",
+"label": "Column Reverse"
+
+},
+
+{
+
+"value": "row-reverse",
+"label": "Row Reverse"
+
+}
+
+],
+
+"default": "row"
+}
+
+],
+"blocks": [
+{
+"type": "Grid_images",
+"name": "Grid Images",
+"settings": [
+{
+
+"type": "text",
+"id": "title",
+"label": "Title"
+},
+{
+
+"type": "text",
+"id": "lbdate",
+"label": "Add Tab Text"
+},
+
+{
+
+"type": "image_picker",
+"id": "look_book_img",
+"label": "Look book"
+},
+{
+"type": "text",
+"id": "look_book_description",
+"label": "description"
+}  
+]
 }
 ],
 
 "presets": [
-    {
-      "name": "Look Book"
-    }
-  ]
-  }
+{
+"name": "Look Book"
+}
+]
+}
 
 {% endschema %}
 
