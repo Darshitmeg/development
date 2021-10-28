@@ -121,7 +121,7 @@
 <script>
   $(document).ready(function () {
     var previousActiveTabIndex = 0;
-$(".tab-switcher").addClass("active");
+    $(".tab-switcher:first-child").addClass("active");
     $(".tab-switcher").on('click keypress', function (event) {
       
       $(this).siblings().removeClass("active");
