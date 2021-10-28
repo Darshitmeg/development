@@ -2,40 +2,24 @@
   <h3> Look Book </h3>
   <div id="allTabsContainer">
     {% for block in section.blocks %}
-
     <div class="tab-container look_book_div" data-tab-index="{{ forloop.index }}" {% if forloop.index != 1 %}style="display:none;" {% endif %}>
-
-
       <div class="griimages">
         <img src={{  block.settings.look_book_img | img_url: 'master'}}>
       </div>
       <div class="grid_content">
-
-
         <p class="grid_text">{{ block.settings.look_book_description  }}</p>
         <button>send</button>
       </div>
-
-
-
     </div>
-
     {% endfor%}
   </div>
   <div class="lookbook_tabing">
     <ul>
       {% for block in section.blocks %}
-
-
-
       <li class="tab-switcher" data-tab-index="{{ forloop.index }}" tabindex="0">{{ block.settings.lbdate }}</li>
       {% endfor%}
-      <!--       <li data-content-id="tab-content-2">2020</li>
-<li data-content-id="tab-content-3">2021</li> -->
-
     </ul>
   </div>
-
 </section>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
