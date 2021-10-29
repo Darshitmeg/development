@@ -22,10 +22,18 @@
               "text": "Welcome to our store",
               "link": ""
             }
+          },
+          "5655b8b7-2f69-42c3-81ad-85b86420282e": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "5655b8b7-2f69-42c3-81ad-85b86420282e"
         ],
         "settings": {
         }
