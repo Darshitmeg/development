@@ -1845,13 +1845,13 @@ color : var(--color-announcementbar-text);
   top: 0;
 }
 
-.shopify-section-header-hidden {
+/* .shopify-section-header-hidden {
   transform: translateY(-100%);
 }
 
 #shopify-section-header.animate {
   transition: transform 0.15s ease-out;
-}
+} */
 
 /* Main Header Layout */
 .header-wrapper {
