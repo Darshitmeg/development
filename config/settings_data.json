@@ -82,6 +82,12 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
+      },
+      "top-bar": {
+        "type": "top-bar",
+        "settings": {
+          "show_social": true
+        }
       }
     },
     "content_for_index": [
