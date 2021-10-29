@@ -15,11 +15,11 @@
     "social_facebook_link": "https:\/\/facebook.com\/shopify",
     "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
     "social_instagram_link": "http:\/\/instagram.com\/shopify",
-    "social_tiktok_link": "https:\/\/tiktok.com\/@shopify",
-    "social_tumblr_link": "https:\/\/shopify.tumblr.com",
-    "social_snapchat_link": "https:\/\/www.snapchat.com\/add\/shopify",
-    "social_youtube_link": "https:\/\/www.youtube.com\/shopify",
-    "social_vimeo_link": "https:\/\/vimeo.com\/shopify",
+    "social_tiktok_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
     "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
     "sections": {
       "announcement-bar": {
