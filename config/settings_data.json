@@ -86,6 +86,7 @@
       "top-bar": {
         "type": "top-bar",
         "settings": {
+          "mobile": "+91 76598 67890",
           "show_cart": true,
           "show_social": true,
           "horizontal_alignment": "flex-start"
