@@ -11,7 +11,21 @@
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "settings": [
+
+{
+      "type": "header",
+      "content": "t:sections.footer.settings.header__2.content",
+      "info": "t:sections.footer.settings.header__2.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social",
+      "default": false,
+      "label": "t:sections.footer.settings.show_social.label"
+    }
+
+]
   }
 {% endschema %}
 
