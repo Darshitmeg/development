@@ -22,10 +22,42 @@
               "text": "Welcome to our store",
               "link": ""
             }
+          },
+          "98aad503-77ce-4c0f-a18a-76d52ed47aab": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "link": ""
+            }
+          },
+          "c66151e3-193b-46be-a997-78c45df05adf": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "link": ""
+            }
+          },
+          "ad4da256-ec90-4a3f-bc42-db09fe1d1161": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "link": ""
+            }
+          },
+          "9f90ea48-4933-45cb-8d6b-1bb8f83ae239": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "98aad503-77ce-4c0f-a18a-76d52ed47aab",
+          "c66151e3-193b-46be-a997-78c45df05adf",
+          "ad4da256-ec90-4a3f-bc42-db09fe1d1161",
+          "9f90ea48-4933-45cb-8d6b-1bb8f83ae239"
         ],
         "settings": {
         }
