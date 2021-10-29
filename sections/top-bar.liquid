@@ -4,6 +4,13 @@
 <div class="page-width top--{{ section.id }}">
   <div class="grid">
     <div class="grid--2-col-desktop grid__item">
+      <div class="">
+        <span class="">
+        
+        
+        </span>
+      
+      </div>
       <div class="social-media">
       {% render 'social-icons' %}
       </div>
@@ -46,7 +53,12 @@
   {
     "name": "Top Bar",
     "settings": [
-
+{
+      "type": "checkbox",
+      "id": "show_cart",
+      "default": true,
+      "label": "Cart Enable"
+    },
 {
       "type": "header",
       "content": "t:sections.footer.settings.header__2.content",
