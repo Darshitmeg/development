@@ -86,7 +86,7 @@
       "top-bar": {
         "type": "top-bar",
         "settings": {
-          "show_cart": false,
+          "show_cart": true,
           "show_social": true,
           "horizontal_alignment": "flex-start"
         }
