@@ -651,57 +651,40 @@
               Column
             </div>
             <div class="col">
-              <ul >
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
               <nav role="navigation">
-  <ul class="nav justify-content-center">
-    {%- for link in linklists.main-menu.links -%}
-      <li class="nav-item">
-        <a class="nav-link" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
-          {{ link.title }}
-        </a>
+                <ul class="nav justify-content-center">
+                  {%- for link in linklists.main-menu.links -%}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+                      {{ link.title }}
+                    </a>
 
-        {%- if link.links != blank -%}
-          <ul class="nav">
-            {%- for child_link in link.links -%}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
-                  {{ child_link.title }}
-                </a>
-
-                {%- if child_link.links != blank -%}
-                  <ul class="nav">
-                    {%- for grandchild_link in child_link.links -%}
+                    {%- if link.links != blank -%}
+                    <ul class="nav">
+                      {%- for child_link in link.links -%}
                       <li class="nav-item">
-                        <a class="nav-link" href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-                          {{ grandchild_link.title }}
+                        <a class="nav-link" href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                          {{ child_link.title }}
                         </a>
+                        {%- if child_link.links != blank -%}
+                        <ul class="nav">
+                          {%- for grandchild_link in child_link.links -%}
+                          <li class="nav-item">
+                            <a class="nav-link" href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                              {{ grandchild_link.title }}
+                            </a>
+                          </li>
+                          {%- endfor -%}
+                        </ul>
+                        {%- endif -%}
                       </li>
-                    {%- endfor -%}
-                  </ul>
-                {%- endif -%}
-
-              </li>
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
-
-      </li>
-    {%- endfor -%}
-  </ul>
-</nav> 
+                      {%- endfor -%}
+                    </ul>
+                    {%- endif -%}
+                  </li>
+                  {%- endfor -%}
+                </ul>
+              </nav> 
             </div>
           </div>
         </div>        
