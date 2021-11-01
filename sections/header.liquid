@@ -646,10 +646,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
 
-            {%- if request.page_type == 'index' -%}
-            <h1 class="header__heading">
-              {%- endif -%}
-              <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+            
+              <a href="{{ routes.root_url }}" class="nav-brand header__heading-link link link--text focus-inset">
                 {%- if section.settings.logo != blank -%}
                 {%- assign image_size = section.settings.logo_width | append: 'x' -%}
                 <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
@@ -664,9 +662,7 @@
                 <span class="h2">{{ shop.name }}</span>
                 {%- endif -%}
               </a>
-              {%- if request.page_type == 'index' -%}
-            </h1>
-            {%- endif -%}
+             
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
