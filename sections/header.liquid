@@ -682,10 +682,10 @@
                 </a>
 
                 {%- if child_link.links != blank -%}
-                  <ul>
+                  <ul class="nav">
                     {%- for grandchild_link in child_link.links -%}
-                      <li>
-                        <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
                           {{ grandchild_link.title }}
                         </a>
                       </li>
