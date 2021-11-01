@@ -651,7 +651,7 @@
               Column
             </div>
             <div class="col">
-              <ul class="nav justify-content-center">
+              <ul >
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Active</a>
                 </li>
@@ -665,14 +665,11 @@
                   <a class="nav-link disabled">Disabled</a>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>        
-<nav role="navigation">
-  <ul>
+              <nav role="navigation">
+  <ul class="nav justify-content-center">
     {%- for link in linklists.main-menu.links -%}
-      <li>
-        <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
         </a>
 
@@ -704,7 +701,11 @@
       </li>
     {%- endfor -%}
   </ul>
-</nav>        
+</nav> 
+            </div>
+          </div>
+        </div>        
+       
         
         
         
